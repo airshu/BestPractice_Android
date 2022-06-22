@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_kotlin_test1.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_kotlin_test1.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/frament_pool_test.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/frament_pool_test.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_pool_test.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_pool_test.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_lauch2.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_lauch2.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/text_row_user.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/text_row_user.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/test_activity.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/test_activity.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/text_row_item.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/text_row_item.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_launch4.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_launch4.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_oom_handler.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_oom_handler.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_launch1.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_launch1.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_content_provider_test.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_content_provider_test.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_rx_java_demo.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_rx_java_demo.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_diff_util_demo.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_diff_util_demo.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_oom_inner_class.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_oom_inner_class.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_jetpack.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_jetpack.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_handler.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_handler.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_oom_thread.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_oom_thread.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_world_banner_gift_game.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/item_world_banner_gift_game.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_recyclerview_test.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_recyclerview_test.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/alone/Android/github/BestPractice_Android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_launch3.xml",
+        "source": "/Users/alone/Android/github/BestPractice_Android/app/src/main/res/layout/activity_launch3.xml"
+    }
+]

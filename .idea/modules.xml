@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BestPractice_Android.iml" filepath="$PROJECT_DIR$/BestPractice_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BestPractice_Android.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.iml" filepath="$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/base/BestPractice_Android.base.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/BestPractice_Android.utils.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lqd.androidpractice">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".LQDApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".rx.RxJavaDemoActivity"
+            android:exported="true" />
+        <activity android:name=".recyclerview.diffutil.DiffUtilDemoActivity" />
+        <activity android:name=".recyclerview.PoolTestActivity" />
+        <activity android:name=".recyclerview.RecyclerviewTestActivity" />
+        <activity android:name=".activity.ContentProviderTestActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KotlinTestActivity" />
+        <activity android:name=".activity.JetpackActivity" />
+        <activity android:name=".lifecycle.LaunchActivity4" />
+        <activity android:name=".lifecycle.LaunchActivity3" />
+        <activity
+            android:name=".lifecycle.LaunchActivity2"
+            android:launchMode="singleTask" />
+        <activity android:name=".lifecycle.LaunchActivity1" />
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".oom.innerclass.OOMInnerClassActivity" />
+        <activity android:name=".oom.handler.OOMHandlerActivity" />
+        <activity android:name=".oom.handler.OOMHandlerRightActivity" />
+
+        <provider
+            android:name=".provider.UsersProvider"
+            android:authorities="com.lqd.androidpractice.provider.UsersProvider" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

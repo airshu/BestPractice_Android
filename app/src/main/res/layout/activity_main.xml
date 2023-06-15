@@ -46,6 +46,11 @@
             android:id="@+id/btnKotlin"
             android:text="Kotlin测试" />
 
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnReactNative"
+            android:text="React Native测试" />
+
 
     </GridLayout>
 

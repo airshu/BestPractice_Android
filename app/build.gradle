@@ -26,6 +26,13 @@ android {
     viewBinding {
         enabled = true
     }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
 }
 
 dependencies {
@@ -48,6 +55,7 @@ dependencies {
 
     implementation project(":utils")
     implementation project(":base")
+    implementation project(":rn")
 
 
     implementation "androidx.core:core-ktx:1.1.0"
@@ -67,6 +75,16 @@ dependencies {
 //    implementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 
     implementation 'androidx.collection:collection-ktx:1.2.0'
+
+//    implementation "com.facebook.react:react-native:+" // From node_modules
+//    implementation "org.webkit:android-jsc:+"
+//
+//    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+//    implementation(name: 'react-native-0.68.3', ext: 'aar')
+//    implementation 'com.facebook.fresco:imagepipeline-okhttp3:2.5.0'
+//    implementation 'com.facebook.fresco:fresco:2.5.0'
+//    implementation 'com.facebook.soloader:soloader:0.10.3'
 
 
 }

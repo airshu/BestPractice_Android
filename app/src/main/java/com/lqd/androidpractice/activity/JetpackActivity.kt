@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import com.lqd.androidpractice.R
-import com.lqd.androidpractice.databinding.ActivityContentProviderTestBinding
 import com.lqd.androidpractice.databinding.ActivityJetpackBinding
 import com.lqd.androidpractice.provider.UsersProvider
 import com.lqd.androidpractice.viewmodel.NameVMFactory

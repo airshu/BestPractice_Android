@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.lqd.androidpractice">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -17,7 +18,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="HardcodedDebugMode">
+        tools:ignore="HardcodedDebugMode"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        >
         <activity
             android:name=".rx.RxJavaDemoActivity"
             android:exported="true" />
@@ -46,6 +50,12 @@
         <activity android:name=".oom.innerclass.OOMInnerClassActivity" />
         <activity android:name=".oom.handler.OOMHandlerActivity" />
         <activity android:name=".oom.handler.OOMHandlerRightActivity" />
+
+
+
+<!--        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />-->
+<!--        <activity android:name=".rn.MyReactActivity" android:label="@string/app_name" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />-->
+
 
         <provider
             android:name=".provider.UsersProvider"

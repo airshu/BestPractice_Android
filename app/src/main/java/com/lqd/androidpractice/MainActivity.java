@@ -1,23 +1,18 @@
 package com.lqd.androidpractice;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.BitmapFactory;
-import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -26,43 +21,19 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.lqd.androidpractice.activity.JetpackActivity;
-import com.lqd.androidpractice.handler.HandlerActivity;
 import com.lqd.androidpractice.lifecycle.LaunchActivity1;
-import com.lqd.androidpractice.oom.handler.OOMHandlerActivity;
-import com.lqd.androidpractice.oom.handler.OOMHandlerRightActivity;
-import com.lqd.androidpractice.oom.innerclass.OOMInnerClassActivity;
-import com.lqd.androidpractice.recyclerview.PoolTestActivity;
-import com.lqd.androidpractice.recyclerview.RecyclerviewTestActivity;
-import com.lqd.androidpractice.recyclerview.diffutil.DiffUtilDemoActivity;
-import com.lqd.androidpractice.rx.RxJavaDemoActivity;
 import com.lqd.androidpractice.view.RadiusProgressBar;
 import com.lqd.base.activity.BaseActivity;
+import com.lqd.rn.MyReactActivity;
 import com.lqd.utils.AudioRecordUtil;
 
-import org.jetbrains.annotations.NotNull;
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import io.reactivex.BackpressureStrategy;
 import io.reactivex.Flowable;
-import io.reactivex.FlowableEmitter;
-import io.reactivex.FlowableOnSubscribe;
-import io.reactivex.FlowableSubscriber;
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
-import io.reactivex.schedulers.Schedulers;
 
 
 public class MainActivity extends BaseActivity {
@@ -111,6 +82,7 @@ public class MainActivity extends BaseActivity {
         }
         audioRecordUtil.startRecord(MainActivity.this);
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -181,6 +153,11 @@ public class MainActivity extends BaseActivity {
 
         findViewById(R.id.btnKotlin).setOnClickListener(view1 -> {
             Intent intent = new Intent(MainActivity.this, KotlinTestActivity.class);
+            MainActivity.this.startActivity(intent);
+        });
+
+        findViewById(R.id.btnReactNative).setOnClickListener(view1 -> {
+            Intent intent = new Intent(MainActivity.this, MyReactActivity.class);
             MainActivity.this.startActivity(intent);
         });
 
@@ -414,6 +391,5 @@ public class MainActivity extends BaseActivity {
     public static void hello(String... names) {
 
     }
-
 
 }

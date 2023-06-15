@@ -3,7 +3,6 @@ package com.lqd.androidpractice;
 import android.app.Application;
 import android.util.Log;
 
-import com.lqd.androidpractice.util.ActivityManager;
 
 import java.util.List;
 
@@ -33,6 +32,23 @@ public class LQDApplication extends Application {
 
 
 
-
-
+//    private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+//        @Override
+//        public boolean getUseDeveloperSupport() {
+//            return BuildConfig.DEBUG;
+//        }
+//
+//        @Override
+//        protected List<ReactPackage> getPackages() {
+//            List<ReactPackage> packages = new PackageList(this).getPackages();
+//            packages.add(new CustomToastPackage());
+//            return packages;
+//        }
+//
+//    };
+//
+//    @Override
+//    public ReactNativeHost getReactNativeHost() {
+//        return mReactNativeHost;
+//    }
 }

@@ -1,4 +1,0 @@
-com/lqd/androidpractice/test/BuildConfig.java
- com.lqd.androidpractice.test.BuildConfig
-com/lqd/androidpractice/ExampleTest.java
- com.lqd.androidpractice.ExampleTest

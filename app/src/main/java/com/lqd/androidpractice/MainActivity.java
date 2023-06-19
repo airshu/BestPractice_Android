@@ -25,6 +25,7 @@ import com.lqd.androidpractice.lifecycle.LaunchActivity1;
 import com.lqd.androidpractice.view.RadiusProgressBar;
 import com.lqd.base.activity.BaseActivity;
 import com.lqd.rn.MyReactActivity;
+import com.lqd.rn.activity.RNActivity1;
 import com.lqd.utils.AudioRecordUtil;
 
 import java.util.ArrayList;
@@ -160,6 +161,12 @@ public class MainActivity extends BaseActivity {
             Intent intent = new Intent(MainActivity.this, MyReactActivity.class);
             MainActivity.this.startActivity(intent);
         });
+        findViewById(R.id.btnReactNative2).setOnClickListener(view1 -> {
+            Intent intent = new Intent(MainActivity.this, RNActivity1.class);
+            MainActivity.this.startActivity(intent);
+        });
+
+
 
     }
 

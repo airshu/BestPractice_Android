@@ -40,8 +40,8 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
         Log.w("MyReactActivity", "onCreate>>>>>>>>>>>>>>>>>>>>>>>>");
 
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if(!Settings.canDrawOverlays(this)) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.canDrawOverlays(this)) {
                 Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName()));
                 startActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
             }
@@ -50,26 +50,19 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
         SoLoader.init(this, false);
         mReactRootView = new ReactRootView(this);
         List<ReactPackage> packages = new PackageList(getApplication()).getPackages();
-//        packages.add(new MyReactNativePackage());
+        //        packages.add(new MyReactNativePackage());
         packages.add(new IndexPackage());
         packages.add(new ImagePickerPackage());
 
         mReactInstanceManager = ReactInstanceManager.builder()
                 //设置上下文
-                .setApplication(getApplication())
-                .setCurrentActivity(this)
-                .setBundleAssetName("index.android.bundle")
+                .setApplication(getApplication()).setCurrentActivity(this).setBundleAssetName("index.android.bundle")
                 //JS bundle主入口的文件名
-                .setJSMainModulePath("index")
-                .addPackages(packages)
-                .setUseDeveloperSupport(BuildConfig.DEBUG)
+                .setJSMainModulePath("index").addPackages(packages).setUseDeveloperSupport(BuildConfig.DEBUG)
                 //设置创建时机
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 //JS异常回调
-                .setRedBoxHandler(new MyRedBoxHandler())
-                .build();
-
-
+                .setRedBoxHandler(new MyRedBoxHandler()).build();
         mReactRootView.startReactApplication(mReactInstanceManager, "MyReactNativeApp", null);
 
         setContentView(mReactRootView);
@@ -77,9 +70,9 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode == OVERLAY_PERMISSION_REQ_CODE) {
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if(!Settings.canDrawOverlays(this)) {
+        if (resultCode == OVERLAY_PERMISSION_REQ_CODE) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (!Settings.canDrawOverlays(this)) {
 
                 }
             }
@@ -140,14 +133,13 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
         }
     }
 
-
 }
 
 class MyRedBoxHandler implements RedBoxHandler {
     @Override
     public void handleRedbox(@Nullable String title, StackFrame[] stack, ErrorType errorType) {
 
-        for(StackFrame stackFrame : stack) {
+        for (StackFrame stackFrame : stack) {
             Log.w("MyReactActivity", "=====handleRedbox   " + stackFrame.getMethod() + " " + stackFrame.getFileName() + " " + stackFrame.getLine() + " " + stackFrame.getColumn() + "  ");
         }
         //JS异常

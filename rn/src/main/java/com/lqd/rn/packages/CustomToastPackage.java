@@ -1,4 +1,4 @@
-package com.lqd.rn;
+package com.lqd.rn.packages;
 
 import androidx.annotation.NonNull;
 

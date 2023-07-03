@@ -3,4 +3,4 @@
 .gradle/*.*
 /*.iml
 */*/*.iml
-/build
+/build!/.idea/

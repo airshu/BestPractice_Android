@@ -1,21 +1,13 @@
 package com.lqd.androidpractice;
 
-import android.app.Application;
 import android.util.Log;
 
 
-import com.facebook.react.PackageList;
-import com.facebook.react.ReactApplication;
-import com.facebook.react.ReactNativeHost;
-import com.facebook.react.ReactPackage;
-import com.lqd.rn.MyReactActivity;
 import com.lqd.rn.RNApplication;
-import com.lqd.rn.packages.ImagePickerPackage;
-import com.lqd.rn.packages.IndexPackage;
 
 import java.util.List;
 
-public class LQDApplication extends RNApplication {
+public class MainApplication extends RNApplication {
 
     private static String TAG = "LQDApplication";
 

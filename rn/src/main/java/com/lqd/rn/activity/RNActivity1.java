@@ -19,6 +19,11 @@ public class RNActivity1 extends ReactActivity {
         return new ReactActivityDelegate(this, getMainComponentName()) {
 
             @Override
+            public String getMainComponentName() {
+                return "index";
+            }
+
+            @Override
             protected void onPause() {
                 super.onPause();
             }
@@ -36,9 +41,4 @@ public class RNActivity1 extends ReactActivity {
     }
 
 
-    @Nullable
-    @Override
-    protected String getMainComponentName() {
-        return "index";
-    }
 }

@@ -24,7 +24,7 @@ import androidx.annotation.NonNull;
 import com.lqd.androidpractice.lifecycle.LaunchActivity1;
 import com.lqd.androidpractice.view.RadiusProgressBar;
 import com.lqd.base.activity.BaseActivity;
-import com.lqd.rn.MyReactActivity;
+import com.lqd.rn.activity.MyReactActivity;
 import com.lqd.rn.activity.RNActivity1;
 import com.lqd.utils.AudioRecordUtil;
 

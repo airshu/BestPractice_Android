@@ -11,6 +11,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/android.base.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/base/android.base.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/android.base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/base/android.base.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/android.base.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/base/android.base.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.iml" filepath="$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1768569432/android.react-native-blob-util.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/rn_core/android.rn.iml" filepath="$PROJECT_DIR$/.idea/modules/rn_core/android.rn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/rn/android.rn.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/rn/android.rn.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/rn/android.rn.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rn/android.rn.main.iml" />

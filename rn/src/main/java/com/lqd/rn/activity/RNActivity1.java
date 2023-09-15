@@ -9,8 +9,23 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.modules.core.PermissionAwareActivity;
 
+//TODO 远程加载 ip:port/index.bundle?platform=android&dev=true&minify=false
+
+/**
+ * 使用继承的方式，需要设置Application
+ */
 public class RNActivity1 extends ReactActivity {
 
+
+  // private ReactBundle mReactBundle;
+  // private ReactBundleLoadManager mBundleManager;
+
+
+    @Nullable
+    @Override
+    protected String getMainComponentName() {
+        return "MyReactNativeApp";
+    }
 
     @Override
     protected ReactActivityDelegate createReactActivityDelegate() {
@@ -20,7 +35,7 @@ public class RNActivity1 extends ReactActivity {
 
             @Override
             public String getMainComponentName() {
-                return "index";
+                return "MyReactNativeApp";
             }
 
             @Override
@@ -39,6 +54,28 @@ public class RNActivity1 extends ReactActivity {
             }
         };
     }
+
+    // private class ReactActivityDelegateEx extends ReactActivityDelegate {
+    //   private final Activity mActivity;
+
+    //   public ReactActivityDelegateEx(Activity activity, @Nullable String mainComponentName) {
+    //     super(activity, mainComponentName);
+    //     mActivity = activity;
+    //   }
+
+    //   public ReactNativeHost getReactNativeHost() {
+    //     return ((ReactApplication) mActivity.getApplication()).getReactNativeHost();
+    //   }
+
+    //   publlic Bundle getLaunchOptions() {
+    //     return getReactNativeHost().getLaunchOptions();
+    //   }
+
+    //   protected ReactRootView createRootView() {
+    //     return new ReactRootView(mActivity);
+    //   }
+
+    // }
 
 
 }

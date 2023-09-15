@@ -27,6 +27,12 @@ public class RNApplication extends Application implements ReactApplication {
     @Override
     public ReactNativeHost getReactNativeHost() {
         return new ReactNativeHost(this) {
+
+            @Override
+            protected String getJSMainModuleName() {
+                return "index";
+            }
+
             @Override
             public boolean getUseDeveloperSupport() {
                 return BuildConfig.DEBUG;

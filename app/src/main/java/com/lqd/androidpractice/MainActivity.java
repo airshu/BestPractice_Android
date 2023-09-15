@@ -154,7 +154,9 @@ public class MainActivity extends BaseActivity {
 
         findViewById(R.id.btnKotlin).setOnClickListener(view1 -> {
             Intent intent = new Intent(MainActivity.this, KotlinTestActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             MainActivity.this.startActivity(intent);
+
         });
 
         findViewById(R.id.btnReactNative).setOnClickListener(view1 -> {

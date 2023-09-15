@@ -65,7 +65,7 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 //JS异常回调
                 .setRedBoxHandler(new MyRedBoxHandler()).build();
-        mReactRootView.startReactApplication(mReactInstanceManager, "MyReactNativeApp", null);
+        mReactRootView.startReactApplication(mReactInstanceManager, "SinglePage", null);
 
         setContentView(mReactRootView);
     }

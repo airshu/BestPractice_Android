@@ -42,7 +42,7 @@ class RadiusProgressBar : View {
     fun setRadius(radius: Float){
         this.radius = radius
     }
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         paint.xfermode = null
         progressBitmap?.let { bitmap ->
             val progressWidth = progress / 100f * width

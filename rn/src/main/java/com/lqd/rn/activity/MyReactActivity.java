@@ -17,12 +17,12 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
-import com.facebook.react.devsupport.RedBoxHandler;
 import com.facebook.react.devsupport.interfaces.ErrorType;
+import com.facebook.react.devsupport.interfaces.RedBoxHandler;
 import com.facebook.react.devsupport.interfaces.StackFrame;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.soloader.SoLoader;
-import com.lqd.rn.BuildConfig;
+import com.lqd.androidpractice.rn.BuildConfig;
 import com.lqd.rn.packages.ImagePickerPackage;
 import com.lqd.rn.packages.IndexPackage;
 

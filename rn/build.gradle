@@ -1,16 +1,23 @@
 apply plugin: 'com.android.library'
+apply plugin: "org.jetbrains.kotlin.android"
+apply plugin: "com.facebook.react"
+
+
+react {
+
+}
 
 android {
-    compileSdkVersion 29
+    ndkVersion rootProject.ext.ndkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdk rootProject.ext.compileSdkVersion
 
-
-
+    namespace "com.lqd.androidpractice.rn"
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 28
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
     }
@@ -24,31 +31,34 @@ android {
 
 }
 
+def jscFlavor = 'org.webkit:android-jsc:+'
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation "com.facebook.react:react-native:+" // From node_modules
-    implementation "org.webkit:android-jsc:+"
+//    implementation "com.facebook.react:react-native:+" // From node_modules
+//    implementation "org.webkit:android-jsc:+"
+
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
-}
 
+//    implementation "com.facebook.react:hermes-android"
 
-def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
+    implementation("com.facebook.react:react-android")
+    implementation("com.facebook.react:flipper-integration")
 
-allprojects{
-
-    configurations.all {
-        resolutionStrategy {
-            // Remove this override in 0.65+, as a proper fix is included in react-native itself.
-            force "com.facebook.react:react-native:" + REACT_NATIVE_VERSION
-        }
+    if (hermesEnabled.toBoolean()) {
+        implementation("com.facebook.react:hermes-android")
+    } else {
+        implementation jscFlavor
     }
+
 }
+
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

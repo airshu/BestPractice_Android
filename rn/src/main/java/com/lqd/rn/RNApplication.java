@@ -8,6 +8,7 @@ import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.lqd.androidpractice.rn.BuildConfig;
 import com.lqd.rn.packages.ImagePickerPackage;
 import com.lqd.rn.packages.IndexPackage;
 
